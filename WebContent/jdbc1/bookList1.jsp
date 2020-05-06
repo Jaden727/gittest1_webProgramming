@@ -18,7 +18,7 @@ List<Book> list = BookDAO.findAll();
 <body>
 <div class="container">
 
-  <h1>학생목록</h1>
+  <h1>책목록</h1>
   
   <table class="table table-bordered table-condensed">
       <thead>
