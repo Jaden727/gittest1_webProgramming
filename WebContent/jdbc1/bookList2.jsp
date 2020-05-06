@@ -3,7 +3,7 @@
 <%
 String srchText = request.getParameter("srchText");
 if (srchText == null) srchText = "";
-List<Book> list = BookDAO2.findByName(srchText);
+List<Book> list = BookDAO.findByName(srchText);
 %>
 <!DOCTYPE html>
 <html>
@@ -23,10 +23,10 @@ List<Book> list = BookDAO2.findByName(srchText);
 
 <div class="container">
 
-<h1>사용자목록</h1>
+<h1>책목록</h1>
 
 <form>
-  <label>이름</label>
+  <label>저자</label>
   <input type="text" name="srchText" value="<%= srchText %>" placeholder="검색조건" />
   <button type="submit">조회</button>
 </form>
